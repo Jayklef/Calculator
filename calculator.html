@@ -8,32 +8,92 @@
   <body>
     <main>
       <table>
+        <caption>
+          <input id="result" type="text" value="0" readonly />
+        </caption>
+
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <input
+              id="allclear"
+              value="ac"
+              type="button"
+              onclick="allClear()"
+            />
+          </td>
+          <td>
+            <input
+              id="square"
+              value="x&sup2;"
+              type="button"
+              onclick="square()"
+            />
+          </td>
+          <td>
+            <input id="percent" value="%" type="button" onclick="percent()" />
+          </td>
+          <td>
+            <input
+              id="divide"
+              value="&divide;"
+              type="button"
+              onclick="operators(4)"
+            />
+          </td>
         </tr>
 
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <input id="seven" value="7" type="button" onclick="input(7)" />
+          </td>
+          <td>
+            <input id="eight" value="8" type="button" onclick="input(8)" />
+          </td>
+          <td>
+            <input id="nine" value="9" type="button" onclick="input(9)" />
+          </td>
+          <td>
+            <input
+              id="multiply"
+              value="&times;"
+              type="button"
+              onclick="operators(3)"
+            />
+          </td>
         </tr>
 
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>
+            <input id="four" value="4" type="button" onclick="input(4)" />
+          </td>
+          <td>
+            <input id="five" value="5" type="button" onclick="input(5)" />
+          </td>
+          <td><input id="six" value="6" type="button" onclick="input(6)" /></td>
+          <td>
+            <input
+              id="subtract"
+              value="&minus;"
+              type="button"
+              onclick="operators(2)"
+            />
+          </td>
         </tr>
 
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><input id="one" value="1" type="button" onclick="input(1)" /></td>
+          <td><input id="two" value="2" type="button" onclick="input(2)" /></td>
+          <td>
+            <input id="three" value="3" type="button" onclick="input(3)" />
+          </td>
+          <td>
+            <input
+              id="add"
+              value="&plus;"
+              type="button"
+              onclick="operators(1)"
+            />
+          </td>
         </tr>
 
         <tr>
